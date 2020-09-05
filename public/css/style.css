@@ -1,0 +1,14 @@
+body {
+  background-color: #f0f0f5;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+#formulario-pergunta {
+  margin-top: 5vh;
+}

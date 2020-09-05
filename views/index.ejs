@@ -1,0 +1,22 @@
+<%-include('./partials/header')%>
+
+<body>
+  <%-include('./partials/navigation')%>
+  <div class="container grade">
+    <p>Perguntas: <%= quantidadePerguntas%></p>
+    <% perguntas.forEach(pergunta => { %>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <h2><%= pergunta.titulo %></h2>
+      </div>
+      <div class="card-footer">
+        <a href="/pergunta/<%= pergunta.id %>" class="btn btn-primary">Responder</a>
+      </div>
+    </div>
+    <br>
+    <% }) %>
+
+  </div>
+</body>
+<%-include('./partials/footer')%>

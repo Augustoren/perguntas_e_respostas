@@ -1,0 +1,29 @@
+{
+  "name": "perguntas_e_respostas",
+  "version": "1.0.0",
+  "description": "Um sistema simples de perguntas e respostas estilo Yahoo, utilizando Node.js no backend.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augustoren/perguntas_e_respostas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Augustoren/perguntas_e_respostas/issues"
+  },
+  "homepage": "https://github.com/Augustoren/perguntas_e_respostas#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

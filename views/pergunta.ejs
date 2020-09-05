@@ -1,0 +1,35 @@
+<%-include('./partials/header')%>
+
+<body>
+  <%-include('./partials/navigation')%>
+  <div class="container">
+
+    <hr>
+    <h2><%= pergunta.titulo %></h2>
+    <p><%= pergunta.descricao%></p>
+    <div class="card">
+
+      <form method="POST" action="/salvarresposta">
+        <div class="card-body">
+          <textarea name="corpo" placeholder="Digite sua resposta" class="form-control"></textarea>
+          <input type="hidden" name="perguntaId" value="<%= pergunta.id %>">
+          <br>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <h3>Respostas</h3>
+    <hr>
+    <% respostas.forEach(resposta => { %>
+    <div class="card">
+      <div class="card-body">
+        <p><%= resposta.corpo %></p>
+      </div>
+    </div>
+    <br>
+    <% }) %>
+
+  </div>
+</body>
+<%-include('./partials/footer')%>
